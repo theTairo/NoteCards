@@ -23,6 +23,7 @@ class NotesController extends Controller
 
     public function delete(Request $request)
     {
-    	
+    	$notes->Note::all();
+    	return $notes;
     }
 }

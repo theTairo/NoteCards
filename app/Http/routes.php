@@ -18,5 +18,6 @@ Route::get('/', function ()
 
 Route::get('cards', 'CardsController@index');
 Route::get('cards/{card}', 'CardsController@show');
-Route::get('cards/delete/{card}', 'CardsController@delete');
+Route::get('cards/{card}/delete', 'CardsController@delete');
 Route::post('cards/{card}/notes', 'NotesController@store');
+Route::post('cards/{card}/notes/{note}/delete', 'NotesController@delete');
