@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+  font-size: 25px; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  display: table;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
+
+a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=app.css.map */

@@ -31,9 +31,7 @@ class CardsController extends Controller
 
     public function delete($id)
     {
-    	$card = Card::find($id);
-        $notes = Note::where('card_id', 1)->get();
-        $notes->delete();
-    	$card->delete();
+        $card = Card::find($id)->delete();
+        $notes = Note::where('card_id', 1)->delete();
     }
 }

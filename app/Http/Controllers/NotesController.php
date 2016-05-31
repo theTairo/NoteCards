@@ -21,9 +21,14 @@ class NotesController extends Controller
  		return back();
     }
 
-    public function delete(Request $request)
+    public function delete($id)
     {
-    	$notes->Note::all();
-    	return $notes;
+    	$note = Note::find($id)->delete(); 	
+    	return back();
+    }
+
+    public function FunctionName($vid)
+    {
+    	
     }
 }

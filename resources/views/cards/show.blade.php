@@ -8,14 +8,16 @@
   <h1>{{$card->title}}</h1>
 </div>
 
+<div class="row">
 <ul class="list-group">
 @foreach($card->notes as $note)
 
-	<li class="list-group-item">{{ $note->body }}</li>
+	<li class="list-group-item">{{ $note->body }}<a href="/notes/{{$note->id}}/delete">X</a></li>
 
 @endforeach
 
-<hr>
+</ul>
+</div>
 
 <form method="POST" action="/cards/{{ $card->id }}/notes">
 	<label>Add a new note</label>
